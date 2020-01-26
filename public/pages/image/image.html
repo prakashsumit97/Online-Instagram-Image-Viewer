@@ -1,0 +1,29 @@
+<div class="section">
+    <div>
+        <div>
+            <button type="button" class="btn btn-default" ng-click="getImage('mountain')">Mountain</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('beach')">Beach</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('road')">Road</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('fashion')">Fashion</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('food')">Food</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('sunset')">Sunset</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('music')">Music</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('work')">Work</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('Airplane')">Airplane</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('Animals')">Animals</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('Emotions')">Emotions</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('Drinks')">Drinks</button>
+            <button type="button" class="btn btn-default" ng-click="getImage('Health')">Health</button>
+
+            <!-- {{image.hits}} -->
+
+        </div>
+        <div style="margin-top:10px">
+            <span ng-repeat="im in image.hits">
+                <img src={{im.webformatURL}} style="width:600px">
+            </span>
+
+        </div>
+
+    </div>
+</div>
